@@ -38,9 +38,9 @@ h1.crew-title {
   border-color: #143f8e;
 }
 
-.crew-image-container:hover .crew-image {
-  /* transform: rotateZ(20deg) scale(1.1); */
-}
+/*.crew-image-container:hover .crew-image {
+   transform: rotateZ(20deg) scale(1.1); 
+}*/
 
 .crew-name {
   margin-top: 10px;

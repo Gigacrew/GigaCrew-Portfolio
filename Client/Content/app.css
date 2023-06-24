@@ -1,1 +1,62 @@
-/* Custom CSS goes here */
+/* CSS for Contact Us Page.
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #db9d47;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    outline-color: #db9d47;
+}
+
+textarea {
+    height: 120px;
+}
+
+.form-group.inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #db9d47;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+}
+*/

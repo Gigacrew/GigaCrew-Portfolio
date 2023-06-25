@@ -1,3 +1,16 @@
 <div class="container">
   <h1>About Us</h1>
-</div>
+  <h1 class="crew-title">MEET THE CREW</h1>
+  <%# This code below takes a team array with the information from the index , 
+that recieves it from the about controller to create the Member cards dynamically,
+ may need some modifaction in the CSS to appear properly  %>
+  <div class="crew-image-row">
+    <% team.forEach( member => { %>
+    <div class="crew-image-container">
+      <img src="<%= member.imgUrl %>" alt="<%=member.name %>" class="crew-image" />
+      <h3 class="crew-name"><%= member.name %></h3>
+      <h4 class="crew-role"><%= member.role %></h4>
+      <p class="crew-description"> <%= member.bio %></p>
+    </div>
+    <% })%>
+  </div>

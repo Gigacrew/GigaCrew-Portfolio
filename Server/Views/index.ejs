@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css" />
   <link rel="stylesheet" href="/Content/app.css" />
-  <link rel="stylesheet" href="/Content/custom.css">
+  <link rel="stylesheet" href="/Content/style.css" />
 </head>
 
 <body>
@@ -18,10 +18,9 @@
   <header><%- include('./components/navbar.ejs'); %></header>
   <main>
     <!-- Main Content Section-->
-    <%- include('./content/' +page+ '.ejs');%>
+    <%- include('./content/' +page+ '.ejs',team);%>
   </main>
 
-  <!-- Footer Section MAYBE??-->
   <footer><%- include('./components/footer.ejs');%></footer>
   <!-- Script Section -->
   <script src="/jquery/dist/jquery.min.js"></script>

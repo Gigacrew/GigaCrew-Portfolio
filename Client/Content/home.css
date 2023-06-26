@@ -1,17 +1,14 @@
-  
+/* Home Page CSS */
   .home-header {
     margin-left: 20px;
     text-align: left;
   }
-  
-  
   .hero {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 20px;
   }
-  
   .hero-image img {
     max-width: 100%;
     height: auto;
@@ -20,12 +17,10 @@
     max-height: 400px;
     margin-top: -70px;
   }
-  
   .hero-content {
     max-width: 700px;
     margin-left: 20px;
   }
-  
   h2 {
     font-size: 24px;
     margin-bottom: 10px;

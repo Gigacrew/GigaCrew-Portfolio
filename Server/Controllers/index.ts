@@ -70,7 +70,7 @@ export function DisplayHomePage(
   res.render("index", {
     title: "Home",
     page: "home",
-    team: team,
+    team: [],
   });
 }
 
@@ -91,19 +91,19 @@ export function DisplayServicesPage(
   res: express.Response,
   next: express.NextFunction
 ): void {
-  res.render("index", { title: "Services", page: "services" });
+  res.render("index", { title: "Services", page: "services", team: [] });
 }
 export function DisplayProjectsPage(
   req: express.Request,
   res: express.Response,
   next: express.NextFunction
 ): void {
-  res.render("index", { title: "Projects", page: "projects" });
+  res.render("index", { title: "Projects", page: "projects", team: [] });
 }
 export function DisplayContactPage(
   req: express.Request,
   res: express.Response,
   next: express.NextFunction
 ): void {
-  res.render("index", { title: "Contact", page: "contact" });
+  res.render("index", { title: "Contact", page: "contact", team: [] });
 }

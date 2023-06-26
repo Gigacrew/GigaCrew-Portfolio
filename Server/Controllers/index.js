@@ -55,7 +55,7 @@ function DisplayHomePage(req, res, next) {
     res.render("index", {
         title: "Home",
         page: "home",
-        team: team,
+        team: [],
     });
 }
 exports.DisplayHomePage = DisplayHomePage;
@@ -68,15 +68,15 @@ function DisplayAboutPage(req, res, next) {
 }
 exports.DisplayAboutPage = DisplayAboutPage;
 function DisplayServicesPage(req, res, next) {
-    res.render("index", { title: "Services", page: "services" });
+    res.render("index", { title: "Services", page: "services", team: [] });
 }
 exports.DisplayServicesPage = DisplayServicesPage;
 function DisplayProjectsPage(req, res, next) {
-    res.render("index", { title: "Projects", page: "projects" });
+    res.render("index", { title: "Projects", page: "projects", team: [] });
 }
 exports.DisplayProjectsPage = DisplayProjectsPage;
 function DisplayContactPage(req, res, next) {
-    res.render("index", { title: "Contact", page: "contact" });
+    res.render("index", { title: "Contact", page: "contact", team: [] });
 }
 exports.DisplayContactPage = DisplayContactPage;
 //# sourceMappingURL=index.js.map

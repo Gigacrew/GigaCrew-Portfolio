@@ -1,3 +1,55 @@
-<div class="container">
-  <h1>Our Latest Projects</h1>
-</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recent Projects</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items:flex-start;
+      margin: 20px;
+    }
+
+    .project-title {
+      font-size: 44px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #eb5e28;
+    }
+
+    .project-description {
+      font-size: 18px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .images-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .screenshot-image {
+      max-width: 200px;
+      margin-right: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>Recent Projects</h3>
+    <h1 class="project-title">Dream Journal</h1>
+    <p class="project-description">The primary goal of the dream journal app is to provide a convenient and organized way for individuals to record and track their dreams. Dream journaling is a practice where people write down the details of their dreams upon waking up. By using a mobile app specifically designed for this purpose, users can capture their dreams quickly and easily, even while still in bed.
+    </p>
+    <div class="images-container">
+      <img class="screenshot-image" src="assets/images/1.jpg" alt="Screenshot 1">
+      <img class="screenshot-image" src="assets/images/2.jpg" alt="Screenshot 2">
+      <img class="screenshot-image" src="assets/images/3.jpg" alt="Screenshot 3">
+      <img class="screenshot-image" src="assets/images/4.jpg" alt="Screenshot 4">
+      <img class="screenshot-image" src="assets/images/5.jpg" alt="Screenshot 5">
+    </div>
+  </div>
+</body>
+</html>
+

@@ -18,11 +18,9 @@
   <header><%- include('./components/navbar.ejs'); %></header>
   <main>
     <!-- Main Content Section-->
-    <%# This is where we pass the about page content in , it will recieve the team object from the controller %>
     <%- include('./content/' +page+ '.ejs',team);%>
   </main>
 
-  <!-- Footer Section MAYBE??-->
   <footer><%- include('./components/footer.ejs');%></footer>
   <!-- Script Section -->
   <script src="/jquery/dist/jquery.min.js"></script>

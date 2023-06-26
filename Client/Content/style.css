@@ -1,3 +1,71 @@
+/* Home Page CSS */
+.home-header {
+  margin-left: 20px;
+  text-align: left;
+}
+.home-header > h1 {
+  font-size: 50px;
+}
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain; 
+  max-height: 400px;
+  margin-top: -70px;
+}
+.hero-content {
+  max-width: 700px;
+  margin-left: 20px;
+}
+h2, .download-app h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #555;
+}
+
+.download-app {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin-bottom: 120px;
+}
+
+.app-logo img {
+  max-width: 200px;
+  margin-left: -30px;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 10px;
+}
+
 /* CSS for About Us Page*/
   h1.crew-title {
     font-size: 30px;
@@ -9,15 +77,16 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 30px;
+    width: 1200px;
     
   }
   .crew-image-container {
     margin: 10px; 
     text-align: center;
+    padding:20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    perspective: 1000px;
     width: 250px;
     border: 2px solid #db9d47;  
   }
@@ -51,4 +120,101 @@
     background-color: #f5f2ee;
     font-size: .625rem;
   }
+  .container {
+    width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
+  h1 {
+    text-align: center;
+    color: #eb5e28;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .form-column {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+    font-weight: normal;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; 
+    box-sizing: border-box; 
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #eb5e28;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #c04b1c;
+  }
+  /* Project Styles */
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin: 20px;
+  }
+
+  .project-title {
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #eb5e28;
+  }
+
+  .project-description {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .images-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .screenshot-image {
+    max-width: 200px;
+    margin-right: 60px;
+  }

@@ -218,3 +218,57 @@ p {
     max-width: 200px;
     margin-right: 60px;
   }
+
+  .services_heading {
+    text-align: left;
+    font-size: 28px;
+    color: #333;
+    padding: 20px;
+    font-weight: bold;
+  }
+
+  .services_description {
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .gray_box_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .graybox {
+    flex: 1;
+    margin-left: 32px;
+    border-radius: 5px;
+    background-color: #DADADA;
+  }
+
+  .graybox:last-child {
+    margin-right: 32px;
+  }
+
+  .graybox_title2 {
+    text-align: center;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .icon-image {
+    max-width: 50px;
+    margin-left: 20px;
+    padding-top: 20px;
+  }
+  
+  .service_heading {
+    text-align: left;
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }

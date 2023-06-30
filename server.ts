@@ -4,19 +4,19 @@
  * Module dependencies.
  */
 
-import app from './Server/Config/app';
-import debug from 'debug';
-debug('inclass-portfolio:server');
-import http from 'http';
-import { HttpError } from 'http-errors';
-import { AddressInfo } from 'net';
+import app from "./Server/Config/app";
+import debug from "debug";
+debug("inclass-portfolio:server");
+import http from "http";
+import { HttpError } from "http-errors";
+import { AddressInfo } from "net";
 
 /**
  * Get port from environment and store in Express.
  */
 
-let port = normalizePort(process.env.PORT || '3000');
-app.set('port', port);
+let port = normalizePort(process.env.PORT || "3000");
+app.set("port", port);
 
 /**
  * Create HTTP server.
@@ -29,14 +29,14 @@ let server = http.createServer(app);
  */
 
 server.listen(port);
-server.on('error', onError);
-server.on('listening', onListening);
+server.on("error", onError);
+server.on("listening", onListening);
 
 /**
  * Normalize a port into a number, string, or false.
  */
 
-function normalizePort(val: string): string | number| false {
+function normalizePort(val: string): string | number | false {
   let port = parseInt(val, 10);
 
   if (isNaN(port)) {
@@ -56,23 +56,21 @@ function normalizePort(val: string): string | number| false {
  * Event listener for HTTP server "error" event.
  */
 
-function onError(error:HttpError):void {
-  if (error.syscall !== 'listen') {
+function onError(error: HttpError): void {
+  if (error.syscall !== "listen") {
     throw error;
   }
 
-  let bind = typeof port === 'string'
-    ? 'Pipe ' + port
-    : 'Port ' + port;
+  let bind = typeof port === "string" ? "Pipe " + port : "Port " + port;
 
   // handle specific listen errors with friendly messages
   switch (error.code) {
-    case 'EACCES':
-      console.error(bind + ' requires elevated privileges');
+    case "EACCES":
+      console.error(bind + " requires elevated privileges");
       process.exit(1);
       break;
-    case 'EADDRINUSE':
-      console.error(bind + ' is already in use');
+    case "EADDRINUSE":
+      console.error(bind + " is already in use");
       process.exit(1);
       break;
     default:
@@ -84,10 +82,8 @@ function onError(error:HttpError):void {
  * Event listener for HTTP server "listening" event.
  */
 
-function onListening():void {
+function onListening(): void {
   let addr = server.address() as AddressInfo;
-  let bind = typeof addr === 'string'
-    ? 'pipe ' + addr
-    : 'port ' + addr.port;
-  debug('Listening on ' + bind);
+  let bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
+  debug("Listening on " + bind);
 }

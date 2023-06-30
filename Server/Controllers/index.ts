@@ -1,4 +1,5 @@
 import express from "express";
+import { sendEmail } from "../../Client/Scripts/sendEmail";
 
 // controller logic to display the home page
 // This is where we will define the team array, objects are used to create the cards for About Us Page
@@ -106,4 +107,25 @@ export function DisplayContactPage(
   next: express.NextFunction
 ): void {
   res.render("index", { title: "Contact", page: "contact", team: [] });
+}
+export function SendEmail(
+  req: express.Request,
+  res: express.Response,
+  next: express.NextFunction
+) {
+  const { firstName, lastName, email, phone, message } = req.body;
+  const from = "contact.gigacrew@gmail.com";
+  const to = "contact.gigacrew@gmail.com";
+  const subject = `Contact Request from ${email}`;
+  const output = `
+      <h2> New Contact Request </h3>
+      <h3> Name: ${firstName} ${lastName} </h4>
+      <h3> Email : ${email} </h3>
+      <h3> Phone : ${phone} </h6>
+      <p>Message : \n ${message}</p>
+
+  `;
+  sendEmail(to, from, subject, output);
+
+  res.redirect("/contact");
 }

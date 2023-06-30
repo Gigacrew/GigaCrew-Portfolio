@@ -5,6 +5,7 @@ import {
   DisplayServicesPage,
   DisplayProjectsPage,
   DisplayContactPage,
+  SendEmail,
 } from "../Controllers";
 let router = express.Router();
 
@@ -23,5 +24,5 @@ router.get("/projects", (req, res, next) =>
   DisplayProjectsPage(req, res, next)
 );
 router.get("/contact", (req, res, next) => DisplayContactPage(req, res, next));
-
+router.post("/contact", (req, res, next) => SendEmail(req, res, next));
 export default router;

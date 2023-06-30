@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.DisplayContactPage = exports.DisplayProjectsPage = exports.DisplayServicesPage = exports.DisplayAboutPage = exports.DisplayHomePage = void 0;
+exports.SendEmail = exports.DisplayContactPage = exports.DisplayProjectsPage = exports.DisplayServicesPage = exports.DisplayAboutPage = exports.DisplayHomePage = void 0;
+const sendEmail_1 = require("../../Client/Scripts/sendEmail");
 const team = [
     {
         name: "Rajanpreet Singh",
@@ -79,4 +80,21 @@ function DisplayContactPage(req, res, next) {
     res.render("index", { title: "Contact", page: "contact", team: [] });
 }
 exports.DisplayContactPage = DisplayContactPage;
+function SendEmail(req, res, next) {
+    const { firstName, lastName, email, phone, message } = req.body;
+    const from = "contact.gigacrew@gmail.com";
+    const to = "contact.gigacrew@gmail.com";
+    const subject = `Contact Request from ${email}`;
+    const output = `
+      <h2> New Contact Request </h3>
+      <h3> Name: ${firstName} ${lastName} </h4>
+      <h3> Email : ${email} </h3>
+      <h3> Phone : ${phone} </h6>
+      <p>Message : \n ${message}</p>
+
+  `;
+    (0, sendEmail_1.sendEmail)(to, from, subject, output);
+    res.redirect("/contact");
+}
+exports.SendEmail = SendEmail;
 //# sourceMappingURL=index.js.map

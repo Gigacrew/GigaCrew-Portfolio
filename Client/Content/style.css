@@ -1,11 +1,8 @@
 /* Home Page CSS */
-.home-header {
-  margin-left: 20px;
-  text-align: left;
-}
-.home-header > h1 {
+.home-header h1 {
   font-size: 50px;
 }
+
 .hero {
   display: flex;
   align-items: flex-start;
@@ -120,6 +117,7 @@ p {
     background-color: #f5f2ee;
     font-size: .625rem;
   }
+  /* Contact Page Css */
   .container {
     width: 600px;
     padding: 20px;

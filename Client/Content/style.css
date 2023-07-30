@@ -121,158 +121,154 @@ p {
 
 
 /* CSS for About Us Page*/
-  h1.crew-title {
-    font-size: 30px;
-    margin-top: 30px;
-  }
-  
+
+h1.crew-title {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.crew-image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+  width: 1200px;
+}
+
+.crew-image-container {
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  border: 2px solid #db9d47;
+}
+
+.crew-image {
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 10px;
+  transition: transform 0.5s;
+  border-color: #143f8e;
+}
+
+.crew-name {
+  margin-top: 10px;
+  padding: 0px;
+  font-weight: bold;
+}
+
+.crew-image-container .crew-role {
+  padding: 0px;
+  margin: 0px;
+  font-weight: bolder;
+  color: #db9d47;
+}
+
+.crew-description {
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #f5f2ee;
+  font-size: 0.625rem;
+}
+
+.container {
+  width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #eb5e28;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-column {
+  flex: 1;
+  margin-right: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: center;
+  font-weight: normal;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #eb5e28;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #c04b1c;
+}
+
+/* Styles for smaller screens */
+@media (max-width: 768px) {
   .crew-image-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 30px;
-    width: 1200px;
-    
+    width: 100%;
+    margin: 10px;
   }
+
   .crew-image-container {
-    margin: 10px; 
-    text-align: center;
-    padding:20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px;
-    border: 2px solid #db9d47;  
+    width: 100%;
   }
-  
-  .crew-image {
-    width: 220px;
-    height: 300px;
-    object-fit: cover;
-    margin-top: 10px;
-    transition: transform 0.5s;
-    border-color: #143f8e;
-  }
- 
-  .crew-name {
-    margin-top: 10px;
-    padding: 0px;
-    font-weight: bold;
-   
-  }
-  
-  .crew-image-container .crew-role {
-    padding: 0px;
-    margin: 0px;
-    font-weight:bolder;
-    color: #db9d47;
-  }
-  
-  .crew-description {
-    margin-top: 5px;
-    padding: 5px;
-    background-color: #f5f2ee;
-    font-size: .625rem;
-  }
-  .container {
-    width: 600px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #eb5e28;
-    font-size: 30px;
-    font-family:Arial, Helvetica, sans-serif;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .form-row {
+}
+
+  /* CSS for services */
+  .services_container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
   }
   
-  .form-column {
+  .graybox {
     flex: 1;
-    margin-right: 10px;
+    margin: 16px;
+    border-radius: 5px;
+    background-color: #DADADA;
+    padding: 20px; /* Added padding to center the content inside the graybox */
   }
   
-  label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    text-align: center;
-    font-weight: normal;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  textarea {
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%; 
-    box-sizing: border-box; 
-  }
-  
-  input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #eb5e28;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #c04b1c;
-  }
-  /* Project Styles */
-  .project-container {
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    margin: 20px;
-  }
-
-  .project-title {
-    font-size: 44px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #eb5e28;
-  }
-
-  .project-description {
-    font-size: 18px;
-    text-align: left;
-    margin-bottom: 20px;
-  }
-
-  .images-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-
-  .screenshot-image {
-    max-width: 200px;
-    margin-right: 60px;
-  }
-
   .services_heading {
     text-align: left;
     font-size: 28px;
@@ -280,7 +276,7 @@ p {
     padding: 20px;
     font-weight: bold;
   }
-
+  
   .services_description {
     text-align: left;
     font-size: 16px;
@@ -288,29 +284,7 @@ p {
     margin-left: 20px;
     margin-right: 20px;
   }
-
-  .gray_box_container {
-    display: flex;
-    justify-content: space-between;
-  }
   
-  .graybox {
-    flex: 1;
-    margin-left: 32px;
-    border-radius: 5px;
-    background-color: #DADADA;
-  }
-
-  .graybox:last-child {
-    margin-right: 32px;
-  }
-
-  .graybox_title2 {
-    text-align: center;
-    font-size: 20px;
-    font-family:Arial, Helvetica, sans-serif;
-  }
-
   .icon-image {
     max-width: 50px;
     margin-left: 20px;
@@ -325,4 +299,51 @@ p {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
+  }
+  
+  /* Add media query for responsive layout */
+  @media (max-width: 768px) {
+    .graybox {
+      flex-basis: 45%; /* Adjust flex-basis for smaller screens */
+    }
+  }
+  
+  /* Add media query for even smaller screens */
+  @media (max-width: 480px) {
+    .graybox {
+      flex-basis: 100%; /* Make each graybox take up full width on small screens */
+    }
+  }
+  
+  /*CSS for projects*/
+
+  .project-container {
+    max-width: 800px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container on the page */
+    padding: 20px;
+  }
+
+  .images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .screenshot-image {
+    max-width: calc(33.33% - 20px); /* Calculate the width of each image considering 3 images in a row and a margin between them */
+    height: auto;
+    margin: 10px;
+  }
+
+  /* Add media query to adjust the layout on smaller screens */
+  @media screen and (max-width: 768px) {
+    .screenshot-image {
+      max-width: calc(50% - 20px); /* For smaller screens, show 2 images in a row */
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .screenshot-image {
+      max-width: calc(100% - 20px); /* For even smaller screens, show 1 image per row */
+    }
   }

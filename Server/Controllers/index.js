@@ -51,6 +51,12 @@ const team = [
         bio: "Hii there! My Name is Harmandeep Kaur having a Bachelor in computer science. My expertise lies in iOS development where i love creating stunning graphics and crafting innovative applications.",
         imgUrl: "/assets/images/crewImages/HarmanPic.jpg",
     },
+    {
+        name: "Janak Makwana",
+        role: "General Programmer",
+        bio: " INSERT BIO WHEN IT IS PRODUCED",
+        imgUrl: "/assets/images/crewImages/JanakPic.jpg",
+    },
 ];
 function DisplayHomePage(req, res, next) {
     res.render("index", {
